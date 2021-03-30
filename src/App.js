@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-      <Weather />
+      <Weather defaultCityName="New York"/>
       <footer>
         This project was coded by Arianna Scampini and is {" "}
       <a href="https://github.com/ariscampini/react-weatherapp-finalproject" 
