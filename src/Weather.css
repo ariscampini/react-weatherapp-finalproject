@@ -1,6 +1,6 @@
 .Weather {
   border: 1px solid #dadde1;
-  color: azure;
+  color: #f0ffff;
   padding: 20px;
   margin: 30px auto;
   border-radius: 5px;
@@ -24,7 +24,7 @@
   text-decoration: none;
   transition: all 200ms ease;
 }
-.Weather .searchButton :hover {
+.Weather .searchButton .hover {
   border: 2px solid #ffff;
   border-radius: 5px;
   color: #e0c3fc;
@@ -36,6 +36,11 @@
   text-decoration: none;
 }
 
+.Weather canvas {
+  margin-right: 10px;
+  display: inline-block;
+}
+
 .Weather h1 {
   font-size: 40px;
 }
@@ -45,7 +50,7 @@
 }
 
 .Weather .temp {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .Weather .unit {
