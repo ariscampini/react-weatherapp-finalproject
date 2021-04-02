@@ -24,7 +24,7 @@
   text-decoration: none;
   transition: all 200ms ease;
 }
-.Weather .searchButton .hover {
+.searchButton :hover {
   border: 2px solid #ffff;
   border-radius: 5px;
   color: #e0c3fc;

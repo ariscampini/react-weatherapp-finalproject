@@ -1,0 +1,15 @@
+.WeatherUnit a:link,
+.WeatherUnit a:visited {
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+}
+
+.WeatherUnit a:hover,
+.WeatherUnit a:active {
+  background-color: white;
+  color: #c8c3fb;
+}

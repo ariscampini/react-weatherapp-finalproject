@@ -1,8 +1,16 @@
 .App {
   max-width: 800px;
   margin: 0 auto;
+
+  font-family: "Nunito", sans-serif;
+  max-width: 70%;
+  display: block;
+  margin: auto;
 }
 
 .App footer {
   font-size: 11px;
+  max-width: 80%;
+  display: block;
+  margin: auto;
 }
