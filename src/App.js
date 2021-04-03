@@ -8,7 +8,7 @@ function App() {
       <Weather defaultCityName="Madrid"/>
       <footer>
         This project was coded by Arianna Scampini and is {" "}
-      <a href="https://github.com/ariscampini/react-weatherapp-finalproject" 
+      <a className= "footer" rel="noreferrer"  href="https://github.com/ariscampini/react-weatherapp-finalproject" 
       target="_blank">open source on GitHub</a>
       </footer>
       </div>

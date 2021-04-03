@@ -34,7 +34,6 @@ return (
 icon={codeMapping[props.code]}
 color="#f0ffff"
 size={60}
-weight={10}
 animate={false}
 />
 );
