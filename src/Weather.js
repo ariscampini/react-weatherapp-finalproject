@@ -7,7 +7,6 @@ import "./Weather.css";
 export default function Weather (props){
 
     const [cityName, setCityName] = useState(props.defaultCityName);
-    const [setReady] = useState(false);
     const [weatherData, setWeatherData] = useState ({ready:false});
 
     function handleResponse (response){
@@ -25,7 +24,6 @@ export default function Weather (props){
             icon: response.data.weather[0].icon,
             description: response.data.weather[0].description,
         });
-        setReady(true);
     }
 
 function search() {
