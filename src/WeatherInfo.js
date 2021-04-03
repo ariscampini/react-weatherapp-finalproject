@@ -8,7 +8,7 @@ export default function WeatherInfo(props) {
         <div className="WeatherInfo">
     <FormattedDate date={props.data.date}/>
             <div className="row">
-                <div className="col-6">
+                <div className="col-7">
                     <h1>{props.data.cityName}</h1>
                        <div className="clearfix">
                            <div className="float-left">
@@ -24,7 +24,7 @@ export default function WeatherInfo(props) {
 
                 </div>
 
-                <div className="col-6">
+                <div className="col-5">
                    <ul>
                        <li>Temperature: ⬆ {Math.round(props.data.tempMax)}°C | ⬇ {Math.round(props.data.tempMin)}°C </li>
                        <hr></hr>

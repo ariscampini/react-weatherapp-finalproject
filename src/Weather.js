@@ -6,11 +6,11 @@ import "./Weather.css";
 
 export default function Weather (props){
 
-    const [cityName, setCityName] = useState(props.defaultCityName);
     const [weatherData, setWeatherData] = useState ({ready:false});
+    const [cityName, setCityName] = useState(props.defaultCityName);
+
 
     function handleResponse (response){
-        console.log(response.data);
         setWeatherData({
             ready: true,
             date: new Date (response.data.dt*1000),
@@ -26,10 +26,7 @@ export default function Weather (props){
         });
     }
 
-function search() {
-    const apiKey="f21a32773c5be9756a640ddc720ea283"
-    let apiUrl=`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`
-    axios.get(apiUrl).then(handleResponse);}
+
 
 function handleSubmit (event) {
     event.preventDefault ();
@@ -39,6 +36,11 @@ function handleSubmit (event) {
 function handleCityChange (event){
     setCityName(event.target.value)
 }
+
+function search() {
+    const apiKey="f21a32773c5be9756a640ddc720ea283"
+    let apiUrl=`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`
+    axios.get(apiUrl).then(handleResponse);}
 
 
     if (weatherData.ready) {
@@ -76,7 +78,7 @@ return(
     } else {
 
     search ();
-    return (<p className="Weather">Loading...</p>)
+    return "Loading..."
     }
 
     
