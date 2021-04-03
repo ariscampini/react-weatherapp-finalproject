@@ -73,5 +73,10 @@
 }
 
 .Weather hr {
-  border-top: 0.5px solid azure;
+  border-top: 0.1px solid azure;
+}
+
+.Loading p {
+  text-align: center;
+  padding-top: 20px;
 }
