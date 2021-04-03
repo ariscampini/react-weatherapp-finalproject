@@ -78,7 +78,7 @@ return(
     } else {
 
     search ();
-    return "Loading..."
+    return (<p className="Weather">Loading...</p>);
     }
 
     
