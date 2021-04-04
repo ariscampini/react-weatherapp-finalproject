@@ -1,0 +1,12 @@
+.WeatherForecast table {
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+}
+
+.Up,
+.Down {
+  font-size: 10px;
+  padding-right: 5px;
+  padding-left: 2px;
+}

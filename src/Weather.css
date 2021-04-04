@@ -68,10 +68,11 @@
 
 .Weather li {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 15px;
   list-style-type: none;
 }
 
 .Weather hr {
-  border-top: 0.1px solid azure;
+  border: 0.1px solid azure;
+  border-width: 0.05px;
 }

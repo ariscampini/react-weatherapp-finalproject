@@ -3,6 +3,7 @@ import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon.js"
 import WeatherUnit from "./WeatherUnit.js"
 
+
 export default function WeatherInfo(props) {
     return (
         <div className="WeatherInfo">
@@ -12,7 +13,7 @@ export default function WeatherInfo(props) {
                     <h1>{props.data.cityName}</h1>
                        <div className="clearfix">
                            <div className="float-left">
-                           <WeatherIcon code= {props.data.icon} />
+                           <WeatherIcon code= {props.data.icon} size={60}/>
                            </div>
                            
                             
@@ -21,8 +22,9 @@ export default function WeatherInfo(props) {
                             </div>
                        </div> 
                        <p className="text-capitalize">{props.data.description}</p>
-
+                
                 </div>
+
 
                 <div className="col-5">
                    <ul>

@@ -1,0 +1,13 @@
+.WeatherForecastH {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+.ForecastTime {
+  padding-bottom: 12px;
+}
+
+.ForecastRain {
+  padding-top: 12px;
+}
