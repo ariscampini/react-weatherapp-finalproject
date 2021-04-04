@@ -76,8 +76,10 @@ return(
             </div> 
         </form>
         <WeatherInfo data={weatherData}/>
+        
         <div className="row">
-             <div className="col-7">
+            
+             <div className="col-12">
                 <WeatherForecastH coordinates={weatherData.coordinates}/>
              </div>
         </div>     

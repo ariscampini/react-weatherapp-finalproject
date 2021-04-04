@@ -17,13 +17,25 @@ export default function WeatherForecastH (props){
 
     if (loaded){
 return (
-    <span>
-        <WeatherForecastHours data={forecast[1]}/>
-      
-      
-        
-    </span>
-        
+   
+    <div className="WeatherForecastH">
+        <div className="row">
+        {forecast.map(function(hourlyForecast, index){
+        if (index < 6) {
+            return(
+            <div className="col" key="index">
+                 <WeatherForecastHours data={hourlyForecast}/>
+            </div>
+          );
+        }
+          
+
+      })}  
+            
+        </div>
+       
+    </div>
+  
     );
     } else {
     const apiKey="f21a32773c5be9756a640ddc720ea283";

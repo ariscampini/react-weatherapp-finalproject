@@ -23,7 +23,10 @@ export default function WeatherForecastH (props){
     return (
         <div>
             < WeatherForecastDay data={forecast[1]} />
-            
+            < WeatherForecastDay data={forecast[2]} />
+            < WeatherForecastDay data={forecast[3]} />
+            < WeatherForecastDay data={forecast[4]} />
+            < WeatherForecastDay data={forecast[5]} />
         </div>
         
     );

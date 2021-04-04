@@ -28,7 +28,7 @@ export default function WeatherInfo(props) {
 
                 <div className="col-5">
                    <ul>
-                       <li>Temperature: ⬆ {Math.round(props.data.tempMax)}°C | ⬇ {Math.round(props.data.tempMin)}°C </li>
+                       <li>Temperature: <span className="Up">⬆</span>  {Math.round(props.data.tempMax)}°C | <span className="Down">⬇</span> {Math.round(props.data.tempMin)}°C </li>
                        <hr></hr>
                        <li>Wind Speed: {props.data.wind}%</li>
                        <hr></hr>
