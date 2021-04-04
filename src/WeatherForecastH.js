@@ -29,6 +29,8 @@ return (
                  <WeatherForecastHours data={hourlyForecast}/>
             </div>
           );
+        } else {
+            return null;
         }
           
 
