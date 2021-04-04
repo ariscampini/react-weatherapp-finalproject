@@ -10,7 +10,6 @@ export default function WeatherForecastH (props){
     let [forecast, setForecast] = useState (null);
 
     function handleResponse (response){
-        console.log (response.data);
         setForecast (response.data.daily)
         setLoaded(true);
     }
@@ -19,7 +18,6 @@ export default function WeatherForecastH (props){
 
     if (loaded)
     {   
-    console.log (forecast)
     return (
         <div>
             < WeatherForecastDay data={forecast[1]} />

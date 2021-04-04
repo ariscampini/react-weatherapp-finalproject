@@ -5,22 +5,21 @@ import axios from "axios";
 
 export default function WeatherForecastH (props){
 
-    let [loaded, setLoaded] = useState(false);
-    let [forecast, setForecast] = useState (null);
+    let [done, setDone] = useState(false);
+    let [forecastH, setForecastH] = useState (null);
 
     function handleResponse (response){
-        console.log (response.data);
-        setForecast (response.data.hourly)
-        setLoaded(true);
+        setForecastH (response.data.hourly)
+        setDone(true);
     }
     
 
-    if (loaded){
+    if (done){
 return (
    
     <div className="WeatherForecastH">
         <div className="row">
-        {forecast.map(function(hourlyForecast, index){
+        {forecastH.map(function(hourlyForecast, index){
         if (index < 6) {
             return(
             <div className="col" key="index">
