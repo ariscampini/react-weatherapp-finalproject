@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import WeatherForecastHours from "./WeatherForecastHours.js";
 import "./WeatherForecastH.css";
 import axios from "axios";
@@ -13,6 +13,9 @@ export default function WeatherForecastH (props){
         setDone(true);
     }
     
+    useEffect(() => {
+        setDone(false);
+    }, [props.coordinates]);
 
     if (done){
 return (
