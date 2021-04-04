@@ -39,9 +39,8 @@ export default function WeatherForecastDay (props){
                         
                         <td className="MaxMin">
                             <span className="Up">⬆</span>
-                            {Math.round(props.data.temp.max)} °C | 
-                            <span className="Down">⬇</span> 
-                            {Math.round(props.data.temp.min)}°C
+                            {Math.round(props.data.temp.max)} °C {""}| 
+                            <span className="Down">⬆</span> {Math.round(props.data.temp.min)}°C
 
                         </td>
                     </tr>

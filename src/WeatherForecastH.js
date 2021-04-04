@@ -25,7 +25,7 @@ return (
         {forecastH.map(function(hourlyForecast, index){
         if (index < 6) {
             return(
-            <div className="col" key="index">
+            <div className="col" key={index}>
                  <WeatherForecastHours data={hourlyForecast}/>
             </div>
           );
